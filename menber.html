@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>画像を横に並べる</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 5px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px; 
+            justify-content: center; 
+        }
+        .image-container figure {
+            width: calc(15% - 1px); 
+            text-align: center; 
+        }
+        .image-container img {
+            width:80%; 
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+        }
+        .image-container figcaption {
+            margin-top: 5px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 4em; 
+            color: #d000ff; 
+        }
+        p {
+            text-align: center;
+            font-size: 1.5em; 
+            color: #d000ff; 
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>MEMBER</h1>
+    <p>メンバー</p>
+</body>
+
+<button onclick="reverseImages()">50音順逆</button>
+
+<script>
+    function reverseImages() {
+        var container = document.querySelector('.image-container');
+        var images = container.querySelectorAll('figure');
+        var reversedImages = Array.prototype.slice.call(images).reverse();
+        container.innerHTML = '';
+        reversedImages.forEach(function (figure) {
+            container.appendChild(figure);
+        });
+    }
+</script>
+<body>
+    <div class="image-container">
+        <figure>
+            <img src="img/img20.jpg" alt="Image 1">
+            <figcaption>五百城　茉央</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img21.jpg" alt="Image 2">
+            <figcaption>池田　瑛紗</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img22.jpg" alt="Image 3">
+            <figcaption>一ノ瀬　美空</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img23.jpg" alt="Image 4">
+            <figcaption>伊藤　理々杏</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img24.jpg" alt="Image 5">
+            <figcaption>井上　和</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img25.jpg" alt="Image 6">
+            <figcaption>岩本　蓮加</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img26.jpg" alt="Image 7">
+            <figcaption>梅沢　美波</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img27.jpg" alt="Image 8">
+            <figcaption>遠藤　さくら</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img28.jpg" alt="Image 9">
+            <figcaption>岡本　姫奈</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img29.jpg" alt="Image 10">
+            <figcaption>小川　彩</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img30.jpg" alt="Image 11">
+            <figcaption>奥田　いろは</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img31.jpg" alt="Image 12">
+            <figcaption>賀喜　遥香</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img32.jpg" alt="Image 13">
+            <figcaption>金川　紗耶</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img33.jpg" alt="Image 14">
+            <figcaption>川崎　桜</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img34.jpg" alt="Image 15">
+            <figcaption>久保　史緒里</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img35.jpg" alt="Image 16">
+            <figcaption>黒見　明香</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img36.jpg" alt="Image 17">
+            <figcaption>佐藤　楓</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img37.jpg" alt="Image 18">
+            <figcaption>佐藤　璃果</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img38.jpg" alt="Image 19">
+            <figcaption>柴田　柚菜</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img39.jpg" alt="Image 20">
+            <figcaption>菅原　咲月</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img40.jpg" alt="Image 21">
+            <figcaption>田村　真佑</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img41.jpg" alt="Image 22">
+            <figcaption>筒井　あやめ</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img42.jpg" alt="Image 23">
+            <figcaption>冨里　奈央</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img43.jpg" alt="Image 24">
+            <figcaption>中西　アルノ</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img44.jpg" alt="Image 25">
+            <figcaption>中村　麗乃</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img45.jpg" alt="Image 26">
+            <figcaption>林　瑠奈</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img46.jpg" alt="Image 27">
+            <figcaption>松尾　美佑</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img47.jpg" alt="Image 28">
+            <figcaption>向井　葉月</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img48.jpg" alt="Image 29">
+            <figcaption>矢久保　美緒</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img49.jpg" alt="Image 30">
+            <figcaption>弓木　奈於</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img50.jpg" alt="Image 31">
+            <figcaption>吉田　綾乃クリスティー</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img51.jpg" alt="Image 32">
+            <figcaption>与田　祐希</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img52.jpg" alt="Image 33">
+            <figcaption>掛橋　沙耶香</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>

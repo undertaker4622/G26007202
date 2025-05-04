@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>画像を横に並べる</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 5px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px; 
+            justify-content: center; 
+        }
+        .image-container figure {
+            width: calc(15% - 1px); 
+            text-align: center; 
+        }
+        .image-container img {
+            width:100%; 
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+        }
+        .image-container figcaption {
+            margin-top: 5px;
+        }
+        h1 {
+            text-align: left;
+            font-size: 2em; 
+            color: #000000; 
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>乃木坂合同会社所属タレント</h1>
+</body>
+
+<button onclick="reverseImages()">50音順逆</button>
+
+<script>
+    function reverseImages() {
+        var container = document.querySelector('.image-container');
+        var images = container.querySelectorAll('figure');
+        var reversedImages = Array.prototype.slice.call(images).reverse();
+        container.innerHTML = '';
+        reversedImages.forEach(function (figure) {
+            container.appendChild(figure);
+        });
+    }
+</script>
+<body>
+    <div class="image-container">
+        <figure>
+            <img src="img/img60.png" alt="Image 1">
+            <figcaption>伊藤　かりん</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img61.png" alt="Image 2">
+            <figcaption>伊藤　万理華</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img62.png" alt="Image 3">
+            <figcaption>齋藤　飛鳥</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img63.png" alt="Image 4">
+            <figcaption>桜井　玲香</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img64.png" alt="Image 5">
+            <figcaption>白石　麻衣</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img65.png" alt="Image 6">
+            <figcaption>高山　一実</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img66.png" alt="Image 7">
+            <figcaption>中田　花奈</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img67.png" alt="Image 8">
+            <figcaption>中元　日芽香</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img68.png" alt="Image 9">
+            <figcaption>西野　七瀬</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img69.png" alt="Image 10">
+            <figcaption>樋口　日奈</figcaption>
+        </figure>
+        <figure>
+            <img src="img/img70.png" alt="Image 11">
+            <figcaption>山下　美月</figcaption>
+        </figure>
+</body>
+</html>

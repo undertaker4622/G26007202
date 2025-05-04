@@ -1,0 +1,16 @@
+.container{
+    margin: 0 auto;
+}
+
+.slider{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slick-prev img{
+    width: 100%;
+}
+
+.slick-next img {
+    width:100%;
+}

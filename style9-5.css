@@ -1,0 +1,25 @@
+.tab .botan{
+    display: flex;
+}
+.tab .tab_botan{
+    width: 200px;
+    padding: 10px 0;
+    margin-left: 5px;
+    color: #333;
+    background: #f5f7f8;
+    text-align: center;
+}
+.tab .tab_botan.active{
+    color: #fff;
+    background: #07539f;
+}
+.tab .panel{
+    border: solid 1px #e3ebf3;
+    padding: 50px;
+}
+.tab .tab_panel{
+    display: none;
+}
+.tab .tab_panel.active{
+    display: block;
+}
